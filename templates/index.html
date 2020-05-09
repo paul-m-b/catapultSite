@@ -1,0 +1,44 @@
+<head>
+	<title>Catapult Control Panel</title>
+</head>
+<body>
+	<h1>Calculate Range Here!</h1>
+	<form action="/calculate" method="post">
+		<p>Desired Release Angle</p>
+		<input type="text" name="angle"></input>
+		<input type="submit" value="Calculate." />
+	</form>
+
+	<h1>Ready to Launch?</h1>
+	<button onclick="display('launchZone');">Display Launch Panel</button>
+
+	<div id="launchZone" style="display:none;">
+		<h2>Instructions for Launch</h2>
+		<p>
+			1)Press "Calibrate." 
+			<br>2)Load the projectile onto the arm.
+			<br>3)Enter the desired release angle.
+			<br>4)Press "Launch Projectile"
+		</p>
+
+		<form action="/calibrate" method="post">
+			<input type="submit" name="calib" value="Calibrate"></input>
+		</form>
+
+		<form action="/launch" method="post">
+			<input type="text" name="angle" value="Angle of Release"></input>
+			<input type="submit" value="Launch Projectile"></input>
+		</form>
+
+<script>
+function display(x) {
+	var a = document.getElementById(x);
+	if (a.style.display === "block") {
+		a.style.display = "none";
+	} else {
+		a.style.display = "block";
+	}
+}
+</script>
+</body>
+		
