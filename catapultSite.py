@@ -11,7 +11,7 @@ GPIO.setmode(GPIO.BOARD)
 GPIO.setup(3, GPIO.OUT)
 pwm=GPIO.PWM(3, 50) 
 
-pwm.start(0)
+pwm.start(0) 
 
 def calibrateMotor():
     duties = [12, 12.5, 12, 12.5, 12.5] 
@@ -84,7 +84,6 @@ def launch():
     angle = request.form["angle"]
     calc_range = calculateRange(float(angle))
     launchProjectile(float(angle))
-    #add in return statement
     return render_template("launched.html", range_=calc_range)
 
 if __name__ == "__main__":
