@@ -87,4 +87,6 @@ def launch():
     #add in return statement
     return render_template("launched.html", range_=calc_range)
 
+if __name__ == "__main__":
+    app.run()
 
