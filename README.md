@@ -1,5 +1,5 @@
 # Physics Science Fair Project 2020
-### "Electronic Catapult"
+### "Electric Catapult"
 A project aimed at exploring Projectile Motion with a Raspberry Pi and Servo Motor; easily controlled with a bare-bones website.
 
 ---
