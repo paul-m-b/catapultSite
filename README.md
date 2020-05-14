@@ -14,7 +14,7 @@ pip3 install flask
 ```
 ## Usage
 1. Connect servo control Jumper to **PIN 3** (Board Numbering)
-2. Make sure the Pi and Servo Motor along with the battery pack on commonly grounded.
+2. Make sure the Pi and Servo Motor along with the battery pack are commonly grounded.
 3. Run the program.
 ```bash
 python3 catapultSite.py
